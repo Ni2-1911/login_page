@@ -1,0 +1,214 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    /* background-color: #000000; */
+    background-color: #0d0d3a;
+    /* background:  linear-gradient(to right, #e96443, #904e95);; */
+    height: 100vh;
+    width:100vw;
+  
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape{
+    height:200px;
+    width:200px;
+    background-color: orange;
+    position: absolute;;
+    border-radius: 50%;;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient( to right,
+    #ff512f,
+    #f09819);
+    bottom:-80px;   
+    right:-80px;
+}
+
+form{
+    height:420px;
+    width:400px; 
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform:translate(-50%,-50%);
+    top:50%; 
+    left:50%;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 50px 35px;
+    padding-bottom: 80px;
+    box-shadow: 0px 0px 40px rgba(8,7,16,0.6);
+}
+
+
+form *{
+    font-family: century;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border:none;
+}
+form div{
+    margin-top:50px;
+    width: 100%;
+    /* background-color: #ffffff;
+     */
+    background-color:rgba(255,255,255,0.3);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align:center;
+}
+form div:hover{
+    margin-top:50px;
+    width: 100%;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    /* background: linear-gradient(to left,orange, #c33764, #1d2671);
+    */
+    background-color: rgba(255,255,255,0.1);
+ 
+}
+
+form .sign_in{
+    margin-right:50px;
+}
+form h3{
+    font-size:32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+form label{
+    display:block;
+    margin-top: 30px;;
+    font-size:20px;
+    font-weight:500;
+    letter-spacing: 2px;
+}
+form input{
+    display:block;
+    height:45px;
+    margin-top:10px;
+    width: 90%;
+    border-radius:30px;
+    background-color: rgba(255,255,255,0.02);
+    padding:0 20px;
+    font-size:15px;
+    font-weight:500;
+}
+::placeholder{
+    color:rgba(255,255,255,0.1);
+}
+
+form button{
+    margin-top:50px;
+    width: 100%;
+    background-color:rgba(255,255,255,0.3);
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover{
+    width: 100%;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+    /* background: linear-gradient(to left, orange,#c33764, #1d2671); */
+}
+
+
+#form_2{
+    width:500px;
+    height:600px;
+    
+
+}
+
+
+@media (max-width:600px)
+{
+    body{background: linear-gradient(to right, #c33764, #1d2671);;
+    overflow:hidden;}
+    .background{
+        display:none;
+    }
+    form{
+        margin-top:15px;
+        padding-right:15px;
+        padding-left:15px;
+        width:80vw; 
+        margin:5px;
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 15px;
+        backdrop-filter: blur(5px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0px 0px 40px rgba(8,7,16,0.6);
+    }
+    #form_2{
+        width:80vw;
+        height: 70vh;
+        padding-right:15px; 
+        padding-left:15px; 
+    }
+     /* #form_2 *{
+        padding-right:15px; 
+         padding-left:15px; 
+        }  */
+
+    
+}
+@media (max-height:750px)
+{   
+    #form_2{
+        height: 80vh;overflow: scroll;
+    }
+}
+@media (max-height:650px){
+    #form_2{
+      
+        padding-right:15px;
+        padding-left:15px;
+        height:calc(calc(0.8*650)*1px); 
+        margin:5px;
+        overflow: scroll;
+    }
+}
